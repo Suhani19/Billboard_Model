@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgba(11, 156, 49, 0.4);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+nav{
+	background-color: white;
+	height:  100px;
+	width: 100%;
+    border-style: ridge;
+    border-color: greengrey;
+    border-width: 5px;
+}
+
+label.title{
+	background: transparent;
+	color: black;
+	font-size: 45px;
+	line-height: 80px;
+	margin-top: 50px;
+	padding :0 50px;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul{
+	float: right;
+	margin-right: 40px;	
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 15px;
+}
+nav ul li a{
+	color: black;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+a.active,a:hover{
+	background: rgba(11, 156, 49, 0.4);
+	transition: .5s;
+
+}
+
+
+div.container{
+	width: 100%;
+}
+
+div.box{
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	margin: 40px 60px;
+	padding :20px;
+}
+
+.heading{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 30px;
+    color: papayawhip;
+    padding: 5px;
+	background-color: transparent;
+
+}
+
+.paragraph{
+	padding: 2px;
+	text-decoration: none;
+	margin: 2px ;
+}
+
+li.properties{
+	border-bottom: 1px solid whitesmoke;
+	padding-bottom: 15px;
+}
+
+h3{
+     color: ghostwhite;
+     padding-bottom: 10px;
+}

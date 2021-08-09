@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Model deployment</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'css/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap " rel="stylesheet ">
+</head>
+
+<body>
+    <nav>
+        <label class="title ">Billboard Hot100 Prediction Using Spotify Data</label>
+        <ul>
+            <li><a class="active " href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('about')}}">About</a></li>
+
+
+        </ul>
+    </nav>
+    <div class="container ">
+        <div class="main ">
+            <form id="predict" action="{{url_for('predict')}}" method="POST">
+                <div>
+                    <label for="artistname ">Name of the Artist </label>
+                    <input type="text " placeholder="Enter the Artist Name " class="item " id="artistname " name="artistname "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="songtitle ">Title of the Song </label>
+                    <input type="text " placeholder="Enter the Song Title " class="item " id="songtitle " name="songtitle "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="danceability ">Danceability </label>
+                    <input type="text " placeholder="Enter Danceability Value eg 0.675 " class="item " id="danceability " name="danceability "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="energy ">Energy </label>
+                    <input type="text " placeholder="Enter Energy Value eg 0.875 " class="item " id="energy " name="energy "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="loudness ">Loudness </label>
+                    <input type="text " placeholder="Enter Loudness Value eg -4.675 " class="item " id="loudness " name="loudness "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="speechiness ">Speechiness </label>
+                    <input type="text " placeholder="Enter Speechiness Value eg 0.0275 " class="item " id="speechiness " name="speechiness "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="acoustiness ">Acoustiness </label>
+                    <input type="text " placeholder="Enter Acoustiness Value eg 0.00775 " class="item " id="acoustiness " name="acoustiness "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="instrumentalness ">Instrumentalness </label>
+                    <input type="text " placeholder="Enter Instrumentalness Value eg 0.0175 " class="item " id="instrumentalness " name="instrumentalness "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="liveness ">Liveness </label>
+                    <input type="text " placeholder="Enter Liveness Value eg 0.175 " class="item " id="liveness " name="liveness "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="valence ">Valence </label>
+                    <input type="text " placeholder="Enter Valence Value eg 0.875 " class="item " id="valence " name="valence "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="tempo ">Tempo </label>
+                    <input type="text " placeholder="Enter Tempo Value eg 70.275 " class="item " id="tempo " name="tempo "></input>
+                </div>
+                <br>
+                <div>
+                    <label for="genre ">Genre </label>
+                    <select class="item " id="genre " name="genre ">
+            <option disabled selected>Select Genre </option>
+            <option value="0">0: Alternative </option>
+            <option value="1">1: Classical</option>
+            <option value="2">2: Country</option>
+            <option value="3">3: EDM</option>
+            <option value="4">4: Jazz</option>
+            <option value="5">5: Metal</option>
+            <option value="6">6: Pop</option>
+            <option value="7">7: Rap</option>
+            <option value="8">8: Reggae</option>
+            <option value="9">9: Rock</option>
+        </select>
+                </div>
+                <br>
+                <div id="submit ">
+
+                    <button class="btn " type="submit">
+            Predict
+        </button>
+
+
+                    <button class="btn " type="reset" href="{{url_for('home')}}">
+            Reset
+        </button>
+                </div>
+        </div>
+        </form>
+
+</body>
+
+</html>

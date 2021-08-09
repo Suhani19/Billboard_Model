@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Model deployment</title>
+    <link rel="stylesheet" href="./static/css/styleee.css">
+</head>
+
+<body>
+    <nav>
+        <label class="title">Prediction Result</label>
+        <ul>
+            <li><a href="/"> Go to Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="main">
+            {%if data ==0%}
+
+            <div class="heading">THE SONG IS NOT GOING TO HIT THE BILLBOARD HOT100 LIST
+            </div>
+
+            {%else%}
+
+            <div class="heading">THE SONG IS GOING TO HIT THE BILLBOARD HOT100 LIST
+            </div>
+
+            {%endif%}
+
+
+            <br>
+        </div>
+
+</body>
+
+</html>
